@@ -1,82 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zerto Automation Portal</title>
+    <title>Zerto Automation Self-Service Portal</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #004080;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #003366;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            background-color: #0059b3;
-        }
-        .container {
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-        }
-        .section-title {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #004080;
-        }
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 20px;
-            width: 30%;
-            text-align: center;
-        }
-        .card h3 {
-            margin-bottom: 10px;
-        }
-        .card a {
-            display: inline-block;
-            margin: 5px;
-            padding: 10px 15px;
-            background-color: #004080;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-        .card a:hover {
-            background-color: #0059b3;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #003366;
-            color: white;
-            margin-top: 20px;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #00A982; color: white; text-align: center; padding: 20px 0; }
+        nav { display: flex; justify-content: center; background-color: #333333; }
+        nav a { color: white; padding: 14px 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background-color: #00A982; }
+        .container { width: 90%; margin: auto; padding: 20px; }
+        .section-title { font-size: 24px; margin-bottom: 10px; color: #00A982; }
+        .card-container { display: flex; flex-wrap: wrap; gap: 20px; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px; width: 30%; text-align: center; }
+        .card h3 { margin-bottom: 10px; }
+        .card a { display: inline-block; margin: 5px; padding: 10px 15px; background-color: #00A982; color: white; text-decoration: none; border-radius: 4px; }
+        .card a:hover { background-color: #007A5E; }
+        footer { text-align: center; padding: 10px; background-color: #333333; color: white; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -85,10 +26,10 @@
         <p>Access tools, guides, and resources to streamline DR planning</p>
     </header>
     <nav>
-        #toolsTools</a>
-        #docsDocumentation</a>
-        #resourcesResources</a>
-        #supportSupport</a>
+        <a href="#tools">Tools</a>
+        <a href="#docs">Documentation</a>
+        <a href="#resources">Resources</a>
+        <a href="#support">Support</a>
     </nav>
     <div class="container">
         <section id="tools">
@@ -97,37 +38,34 @@
                 <div class="card">
                     <h3>LicenseView Tool</h3>
                     <p>Monitor license utilization and detect growth trends.</p>
-                    https://github.com/ZertoPublic/LicenseView.gitGitHub</a>
-                    #Download</a>
+                    <a href="https://github.com/ZertoPublic/LicenseView" target="_blank">View on GitHub</a>
                 </div>
                 <div class="card">
                     <h3>Compliance Tool</h3>
                     <p>Generate compliance reports for Zerto environments.</p>
-                    https://github.com/ZertoPublic/Zerto-Compliance-Tool.gitGitHub</a>
-                    #Download</a>
+                    <a href="https://github.com/ZertoPublic/Zerto-Compliance-Tool" target="_blank">View on GitHub</a>
                 </div>
                 <div class="card">
                     <h3>TempDB Volume Mapper</h3>
                     <p>Map VM guest drives to vSphere disks for VPG planning.</p>
-                    #GitHub</a>
-                    #Download</a>
+                    <a href="#" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </section>
         <section id="docs">
             <h2 class="section-title">Documentation</h2>
             <ul>
-                <li>#How to Install and Use LicenseView</a></li>
-                <li>#Compliance Reporting Guide</a></li>
-                <li>#Automating Volume Mapping for VPG Planning</a></li>
+                <li><a href="docs/LicenseView.docx">How to Install and Use LicenseView</a></li>
+                <li><a href="docs/ComplianceTool.docx">Compliance Reporting Guide</a></li>
+                <li><a href="docs/TempDBMapper.docx">Automating Volume Mapping for VPG Planning</a></li>
             </ul>
         </section>
         <section id="resources">
             <h2 class="section-title">Resources</h2>
             <ul>
-                <li>#Training Videos</a></li>
-                <li>#KB Articles</a></li>
-                <li>#FAQs</a></li>
+                <li>Training Videos</li>
+                <li>KB Articles</li>
+                <li>FAQs</li>
             </ul>
         </section>
         <section id="support">
