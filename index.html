@@ -1,266 +1,142 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alastoff - Automation Engineer | PowerShell | Python | SQL | Infrastructure">
-    <title>Alastoff - Infrastructure & Automation Engineer</title>
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Zerto Automation Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003366;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #0059b3;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #004080;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+        }
+        .card a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #004080;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .card a:hover {
+            background-color: #0059b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-lg">
-            <a class="navbar-brand fw-bold" href="#home">
-                <i class="fas fa-code"></i> Alastoff
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+    <header>
+        <h1>Zerto Automation Self-Service Portal</h1>
+        <p>Access tools, guides, and resources to streamline DR planning</p>
+    </header>
+    <nav>
+        #toolsTools</a>
+        #docsDocumentation</a>
+        #resourcesResources</a>
+        #supportSupport</a>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section py-5 text-white text-center">
-        <div class="container-lg py-5">
-            <h1 class="display-3 fw-bold mb-4">Hi, I'm Alastoff</h1>
-            <p class="lead fs-5 mb-4">Infrastructure & Automation Engineer</p>
-            <p class="fs-6 mb-4">Building powerful automation tools with PowerShell • Python • SQL Server</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-light btn-lg me-3 mb-2">
-                    <i class="fas fa-folder-open"></i> View My Projects
-                </a>
-                <a href="https://github.com/alastoff" target="_blank" class="btn btn-outline-light btn-lg mb-2">
-                    <i class="fab fa-github"></i> GitHub Profile
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="py-5 bg-light">
-        <div class="container-lg">
-            <h2 class="text-center mb-5 section-title">About Me</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <p class="fs-5 mb-3">I'm an infrastructure and automation engineer passionate about building tools that solve real-world problems and save time for teams.</p>
-                    <p class="fs-5 mb-3">My focus areas include:</p>
-                    <ul class="fs-5 mb-3">
-                        <li>Enterprise automation with PowerShell and Python</li>
-                        <li>Database optimization and SQL Server administration</li>
-                        <li>Licensing and capacity management</li>
-                        <li>Cross-platform scripting and CLI tools</li>
-                        <li>REST API integration and data processing</li>
-                    </ul>
+    <div class="container">
+        <section id="tools">
+            <h2 class="section-title">Automation Tools</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>LicenseView Tool</h3>
+                    <p>Monitor license utilization and detect growth trends.</p>
+                    https://github.com/ZertoPublic/LicenseView.gitGitHub</a>
+                    #Download</a>
                 </div>
-                <div class="col-lg-6">
-                    <div class="stats-box">
-                        <div class="stat-item">
-                            <i class="fas fa-code"></i>
-                            <h3>2+ Projects</h3>
-                            <p>Featured on GitHub</p>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-laptop-code"></i>
-                            <h3>Multiple Languages</h3>
-                            <p>PowerShell, Python, SQL</p>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h3>Compliance Tool</h3>
+                    <p>Generate compliance reports for Zerto environments.</p>
+                    https://github.com/ZertoPublic/Zerto-Compliance-Tool.gitGitHub</a>
+                    #Download</a>
+                </div>
+                <div class="card">
+                    <h3>TempDB Volume Mapper</h3>
+                    <p>Map VM guest drives to vSphere disks for VPG planning.</p>
+                    #GitHub</a>
+                    #Download</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container-lg">
-            <h2 class="text-center mb-5 section-title">Featured Projects</h2>
-            <div class="row g-4">
-                
-                <!-- Project 1: Zerto Licensing Report -->
-                <div class="col-md-6 col-lg-6">
-                    <div class="card project-card h-100 shadow-sm">
-                        <div class="card-header bg-gradient-primary">
-                            <i class="fas fa-chart-pie"></i> Zerto Licensing Utilization Report
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text mb-3">
-                                Automated cross-platform tool for querying Zerto Virtual Manager environments and generating professional licensing utilization reports.
-                            </p>
-                            <h6 class="mb-2"><strong>Key Features:</strong></h6>
-                            <ul class="small mb-3">
-                                <li>Interactive HTML dashboard with Chart.js visualizations</li>
-                                <li>CSV and JSON exports for BI integration</li>
-                                <li>Support for Zerto 10.x (Keycloak OIDC) and legacy authentication</li>
-                                <li>Trend forecasting and risk scoring</li>
-                                <li>Multi-site and VPG breakdown analysis</li>
-                                <li>Dual runtime: PowerShell Core 7+ and Python 3.10+</li>
-                            </ul>
-                            <div class="mb-3">
-                                <span class="badge bg-primary">PowerShell</span>
-                                <span class="badge bg-info">Python</span>
-                                <span class="badge bg-success">REST API</span>
-                                <span class="badge bg-warning text-dark">Bootstrap 5</span>
-                                <span class="badge bg-secondary">Chart.js</span>
-                            </div>
-                            <a href="https://github.com/alastoff/zerto-licensing-report" target="_blank" class="btn btn-outline-primary btn-sm me-2">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <a href="https://github.com/alastoff/zerto-licensing-report#readme" target="_blank" class="btn btn-outline-secondary btn-sm">
-                                <i class="fas fa-book"></i> Documentation
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: TempDB Optimization -->
-                <div class="col-md-6 col-lg-6">
-                    <div class="card project-card h-100 shadow-sm">
-                        <div class="card-header bg-gradient-success">
-                            <i class="fas fa-database"></i> SQL Server TempDB Optimization
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text mb-3">
-                                Comprehensive SQL Server TempDB optimization and management toolkit. Automates configuration, monitoring, and troubleshooting of TempDB performance issues.
-                            </p>
-                            <h6 class="mb-2"><strong>Key Features:</strong></h6>
-                            <ul class="small mb-3">
-                                <li>Automated TempDB file configuration and sizing</li>
-                                <li>Performance monitoring and alerting</li>
-                                <li>Diagnostic scripts for identifying bottlenecks</li>
-                                <li>Best practices implementation automation</li>
-                                <li>Multi-instance support</li>
-                                <li>Health check and reporting</li>
-                            </ul>
-                            <div class="mb-3">
-                                <span class="badge bg-success">SQL Server</span>
-                                <span class="badge bg-primary">PowerShell</span>
-                                <span class="badge bg-info">T-SQL</span>
-                                <span class="badge bg-secondary">Performance</span>
-                            </div>
-                            <a href="https://github.com/alastoff/sql-tempdb-optimization" target="_blank" class="btn btn-outline-success btn-sm me-2">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <a href="https://github.com/alastoff/sql-tempdb-optimization#readme" target="_blank" class="btn btn-outline-secondary btn-sm">
-                                <i class="fas fa-book"></i> Documentation
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
-        <div class="container-lg">
-            <h2 class="text-center mb-5 section-title">Skills & Technologies</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-box">
-                        <i class="fas fa-terminal"></i>
-                        <h5>Scripting</h5>
-                        <p class="small">PowerShell Core, Python, Bash</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-box">
-                        <i class="fas fa-database"></i>
-                        <h5>Databases</h5>
-                        <p class="small">SQL Server, Performance Tuning, T-SQL</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-box">
-                        <i class="fas fa-cloud"></i>
-                        <h5>APIs & Integration</h5>
-                        <p class="small">REST APIs, OAuth 2.0, OIDC, YAML</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-box">
-                        <i class="fas fa-chart-line"></i>
-                        <h5>Reporting & Dashboards</h5>
-                        <p class="small">HTML, Bootstrap, Chart.js, JSON</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-box">
-                        <i class="fas fa-wrench"></i>
-                        <h5>Tools & Platforms</h5>
-                        <p class="small">Git, GitHub, VS Code, Windows/Linux</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-box">
-                        <i class="fas fa-shield-alt"></i>
-                        <h5>Security</h5>
-                        <p class="small">TLS, Authentication, Credential Management</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-box">
-                        <i class="fas fa-tasks"></i>
-                        <h5>Automation</h5>
-                        <p class="small">Workflow automation, Task scheduling</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-box">
-                        <i class="fas fa-cogs"></i>
-                        <h5>Infrastructure</h5>
-                        <p class="small">Virtualization, Licensing, Capacity Planning</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container-lg text-center">
-            <h2 class="mb-5 section-title">Get In Touch</h2>
-            <p class="fs-5 mb-4">I'm always interested in hearing about new projects and challenges.</p>
-            <div class="social-links mb-4">
-                <a href="https://github.com/alastoff" target="_blank" class="social-link" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/alastoff" target="_blank" class="social-link" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:contact@alastoff.com" class="social-link" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-            <p class="text-muted">Feel free to explore my repositories and reach out with any questions!</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container-lg text-center">
-            <p class="mb-0">&copy; 2026 Alastoff. All rights reserved. | Powered by <a href="https://pages.github.com/" target="_blank" class="text-decoration-none text-light">GitHub Pages</a></p>
-        </div>
+        </section>
+        <section id="docs">
+            <h2 class="section-title">Documentation</h2>
+            <ul>
+                <li>#How to Install and Use LicenseView</a></li>
+                <li>#Compliance Reporting Guide</a></li>
+                <li>#Automating Volume Mapping for VPG Planning</a></li>
+            </ul>
+        </section>
+        <section id="resources">
+            <h2 class="section-title">Resources</h2>
+            <ul>
+                <li>#Training Videos</a></li>
+                <li>#KB Articles</a></li>
+                <li>#FAQs</a></li>
+            </ul>
+        </section>
+        <section id="support">
+            <h2 class="section-title">Support</h2>
+            <p>Need help? Contact the PS Team or open a GitHub issue.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 Zerto Automation Portal</p>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
